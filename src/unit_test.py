@@ -243,9 +243,9 @@ def data_generation():
         assert vessel.requested_departure_time <= len(time_period) - 1
 
     # 生成集卡对象（TODO：是否有必要？）
-    # TODO：对上述生成的数据做单元测试，如何做？
+    # TODO：对上述生成的数据做单元测试，如何做？把生成的这些对象的信息都打印出来？
     print("数据生成成功，见下方！")
-
+    print("共生成{}个码头")
     return terminal_list, berth_block_distance_matrix, block_distance_matrix, time_period, vessel_list, container_list
 
 
